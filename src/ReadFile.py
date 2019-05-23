@@ -1,0 +1,58 @@
+import pandas
+
+class ReadFile:
+    
+    def read(file):
+        cols = ['elbowleft_x',
+                'elbowleft_y',
+                'elbowleft_z',
+                'elbowright_x',
+                'elbowright_y',
+                'elbowright_z',
+                'footleft_x',
+                'footleft_y',
+                'footleft_z',
+                'footright_x',
+                'footright_y',
+                'footright_z',
+                'handleft_x',
+                'handleft_y',
+                'handleft_z',
+                'handright_x',
+                'handright_y',
+                'handright_z',
+                'head_x',
+                'head_y',
+                'head_z',
+                'hipleft_x',
+                'hipleft_y',
+                'hipleft_z',
+                'hipright_x',
+                'hipright_y',
+                'hipright_z',
+                'kneeleft_x',
+                'kneeleft_y',
+                'kneeleft_z',
+                'kneeright_x',
+                'kneeright_y',
+                'kneeright_z',
+                'spineshoulder_x',
+                'spineshoulder_y',
+                'spineshoulder_z',
+                'shoulderleft_x',
+                'shoulderleft_y',
+                'shoulderleft_z',
+                'shoulderright_x',
+                'shoulderright_y',
+                'shoulderright_z',
+                'spinebase_x',
+                'spinebase_y',
+                'spinebase_z',
+                'spinemid_x',
+                'spinemid_y',
+                'spinemid_z',
+                'time']
+        df = pandas.read_csv(file, usecols=cols)
+        return(df.values)
+
+#print((read_file.read('../data/sample_data.csv')))
