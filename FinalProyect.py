@@ -3,9 +3,8 @@ from src.animation import *
 
 array = []
 fileName = 'data/sample_data.csv'
-animate(array)
 
 skeret = Skeleton(fileName)
+animate(fileName, skeret.get_kinetic_energy(), skeret.get_calories())
 
 
-print(skeret.get_calories())
