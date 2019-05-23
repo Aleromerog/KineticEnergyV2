@@ -1,5 +1,11 @@
 from src.Skeleton import Skeleton
+from src.animation import *
 
-skeret = Skeleton('data/sample_data.csv')
+array = []
+fileName = 'data/sample_data.csv'
+animate(array)
+
+skeret = Skeleton(fileName)
+
 
 print(skeret.get_calories())
