@@ -3,6 +3,7 @@ from vpython import *
 
 def animate(fileName, kinetic, caloric):
     list = ReadFile.read(fileName)
+    #joints
     ball1 = sphere(pos=vector(list[0][1],list[0][2],list[0][3]), radius=.05, color=color.blue)
     ball2 = sphere(pos=vector(list[0][4],list[0][5],list[0][6]), radius=.05, color=color.blue)
     ball3 = sphere(pos=vector(list[0][7],list[0][8],list[0][9]), radius=.05, color=color.blue)
@@ -19,6 +20,8 @@ def animate(fileName, kinetic, caloric):
     ball14 = sphere(pos=vector(list[0][40],list[0][41],list[0][42]), radius=.05, color=color.blue)
     ball15 = sphere(pos=vector(list[0][43],list[0][44],list[0][45]), radius=.05, color=color.blue)
     ball16 = sphere(pos=vector(list[0][46],list[0][47],list[0][48]), radius=.05, color=color.blue)
+    #bones
+    bone1 = arrow(pos=ball1.pos, axis=ball2.pos-ball1.pos,shaftwidth=0.01, color=color.red)
 
     print (len(list))
     current = canvas.get_selected() 
@@ -45,5 +48,7 @@ def animate(fileName, kinetic, caloric):
         ball14.pos = vector(list[frame][40],list[frame][41],list[frame][42])
         ball15.pos = vector(list[frame][43],list[frame][44],list[frame][45])
         ball16.pos = vector(list[frame][46],list[frame][47],list[frame][48])
+
+        bone1.pos = vector(list[frame][1],list[frame][2],list[frame][3])
 
 
