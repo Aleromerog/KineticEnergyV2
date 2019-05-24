@@ -20,8 +20,8 @@ def animate(fileName, kinetic, caloric):
     ball14 = sphere(pos=vector(list[0][40],list[0][41],list[0][42]), radius=.05, color=color.blue)
     ball15 = sphere(pos=vector(list[0][43],list[0][44],list[0][45]), radius=.05, color=color.blue)
     ball16 = sphere(pos=vector(list[0][46],list[0][47],list[0][48]), radius=.05, color=color.blue)
-    #bones
-    bone1 = arrow(pos=ball1.pos, axis=ball2.pos-ball1.pos,shaftwidth=0.01, color=color.red)
+    #bones TODO Crear la conexión visual de los nodos
+    #bone1 = arrow(pos=ball1.pos, axis=ball2.pos-ball1.pos,shaftwidth=0.01, color=color.red)
 
     print (len(list))
     current = canvas.get_selected() 
@@ -49,6 +49,6 @@ def animate(fileName, kinetic, caloric):
         ball15.pos = vector(list[frame][43],list[frame][44],list[frame][45])
         ball16.pos = vector(list[frame][46],list[frame][47],list[frame][48])
 
-        bone1.pos = vector(list[frame][1],list[frame][2],list[frame][3])
+        #bone1.pos = vector(list[frame][1],list[frame][2],list[frame][3])
 
 
