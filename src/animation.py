@@ -47,6 +47,3 @@ def animate(fileName, kinetic, caloric):
         ball16.pos = vector(list[frame][46],list[frame][47],list[frame][48])
 
 
-
-    #TODO
-    print("kpdo")
