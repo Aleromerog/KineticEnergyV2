@@ -111,5 +111,3 @@ def animate(fileName, kinetic, caloric):
         bone15.axis = ball14.pos-ball9.pos
         
 
-    #TODO
-    print("kpdo")
