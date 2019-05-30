@@ -2,19 +2,19 @@
 
 ## Clase ReadFile.py
 ### Métodos:
-Leer archivo, donde recibe todas las columnas del archivo como importación, con auxilio de la biblioteca pandas el archivo csv y devolver los valores.
+read, recibe como parametro un archivo csv, el cual con ayuda de la librería pandas, procesa las columnas deseeadas y el metodo regresa los valores en forma de lista.
 
 ## Clase Skeleton.py
 ### Métodos:
 Get skeleton joints: se obtienen los datos de articulación, a través del método de la clase anterior
 
-Geet Time: con ayuda de la biblioteca datetime se obtienen los datos necesarios referente a tiempo
+Get Time: con ayuda de la librería datetime se obtienen los datos necesarios referente a tiempo
 
-Get Mass: de 0 a 15 en una lista si reciben los valores de posiciones para devolver el valor de masa
+Get Mass: de 0 a 15 en una lista se obtienen valores de masa calculados previemente por joint dependiendo la edad del pasciente en el csv e ejemplo.
 
 Get kinetic energy: método responsable por datos referentes a la energía cinetica generada para obtener datos de distacia y velocidad
 
-Get calories: devuelve valores de calorías basados en los datos disponibles en https://www.zonadiet.com/nutricion/energia.htm
+Get calories: devuelve valores de calorías basados en los datos disponibles en https://www.zonadiet.com/nutricion/energia.htm en cojunto a la referenccia de energía cinética calculada anteriormente.
 
 ## Clase animation.py
 ### Métodos:
